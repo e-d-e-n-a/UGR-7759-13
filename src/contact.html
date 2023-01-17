@@ -1,46 +1,71 @@
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
 	<title>contact us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
-    </div>
-    <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>
+	<header>
+        <script src="script.js" defer></script>
+        <nav class="navbar">
+            <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <ul>
+                        <li><a class="class1" href="Homepage.htm">Home</a></li>
+                        <li><a class="class1" href="movies.html">Movies</a></li>       
+                        <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                        <li><a class="class2" href="login.html">Login</a></li>   
+                        <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                        <li><a class="class2" href="contact.html">Contact us</a></li>  
+                        </ul>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="wel" align="center">Contact us!!!<br><br>We would love <p>&#128151;&#128151;&#128151;</p> to hear from you</h1>
+   
+    </header>
     <h1>Write us a message</h1>
 <br>
 <br>
-<form>
-	First Name:<input type="text" name="fname" placeholder="Eden"><br><br><br>
-	Last Name:<input type="text" name="lname" placeholder="Asamere"><br><br><br>
+<div>
+<div class="containerc">
+<script src="myscript.js"></script>
+<form onsubmit="return valcont() " action="homepage.htm">
+	<p>First Name:</p> <input title="fname" type="text" name="fname" placeholder="Eden" id="fname"><br><br><br>
+	<p>Last Name:</p><input title="lname" type="text" name="lname" placeholder="Asamere"><br><br><br>
 
-	Phone number:<input type="text" name="number" placeholder="+251900998877"><br><br><br>
+    <p>Phone number:</p><input  title="pnumber" type="text" name="number" placeholder="+251900998877" id="pno"><br><br><br>
 
-	Message:<textarea name="message" rows="10" cols="30"></textarea>
+    <p>Message:</p><textarea  title="txt area" name="message" rows="10" cols="30" id="message"></textarea>
 		  	<br><br><br>
-	<button><a href="contact.html">Reset</a></button>
-	<input type="submit">
+	<a class="btng" type="reset" style="padding-left: 70px; padding-right: 50px;margin-left:20px;" href="contact.html">Reset</a>
+	<input class="btng" style="border-radius:25px"  value="Submit" type="submit">
+    </div>
+</form>
+</div>
+<div class="cont">
 	<h1>Contact</h1>
 <ul>
-    <li>
-        Company:ABCDcinema<br>
-        email:abcdcinema@gmail.com<br>
-        telephone:+251988776655<br>
-        Facebook:abcdcinema
-        Instagram:@abcdcinema
-    </li>
+    <li>Company:ABCDcinema</li>
+    <li>email:abcdcinema@gmail.com<br> </li>
+    <li>telephone:+251988776655<br> </li>
+    <li>Facebook:abcdcinema </li>
+    <li>Instagram:@abcdcinema </li>
+    
 </ul>
-   
+</div>
+</div>
 
-</form>
+
 <br>
 <br>
 	<hr>

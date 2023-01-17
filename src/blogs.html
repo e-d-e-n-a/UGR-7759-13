@@ -1,47 +1,74 @@
-
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
 	<title>blogs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
-    </div>
-    <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>
+	<header>
+        <script src="script.js" defer></script>
+        <nav class="navbar">
+            <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <ul>
+                        <li><a class="class1" href="Homepage.htm">Home</a></li>
+                        <li><a class="class1" href="movies.html">Movies</a></li>       
+                        <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                        <li><a class="class2" href="login.html">Login</a></li>   
+                        <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                        <li><a class="class2" href="contact.html">Contact us</a></li>  
+                        </ul>
+                </ul>
+            </div>
+            </nav>
+        <h1 class="wel" align="center">BLOG ON WHAT YOU THINK ABOUT OUR WEBSITE!!!</h1>      
+    </header>
 	<h1>Blogs</h1>
 	<br>
-			<img src="IMAGES/person1.jpg" width="300px" height="200px"><br>
+    <div class="blog">
+        <div>
+			<img src="IMAGES/person1.jpg" width="300px" height="200px" alt="image shows the person who post"><br>
 			<p>Soniya Yusuf<br>
 				This platform is really helpful.<br>
 				It reduces the time that one spends on booking<br> 
 				ticket by going to the cinema in person.<br>
 				</p>
-			<img src="IMAGES/person2.jpg" width="300px" height="200px"><br>
+            </div>
+            <div>
+			<img src="IMAGES/person2.jpg" width="300px" height="200px" alt="image shows the person who posts"><br>
 			<p>Theodor James<br>
 				<br>I recommend you to use this website.
 				<br>it is a lot of help.
 				<br>
-			<img src="IMAGES/person3.jpg" width="300px" height="200px"><br>
+ 
+            </div>
+            <div>
+			<img src="IMAGES/person3.jpg" width="300px" height="200px" alt="image shows the person who posts"><br>
 			<p>Bruce<br>
 				<br>I got recommended of this website from a friend
 				<br>,but it will be good if the creator updates the information<br>
 				in accordance with it's release date,like latest movies should<br>
 				appear first.
 			</p>
-	<form>
-		  	Add yours here:<textarea name="message" rows="10" cols="30" placeholder="write your message here"></textarea>
+            </div>
+        </div>
+	<form style="margin-left:10%" onsubmit="return valblog()" >
+         	<p style="margin-bottom: 5%; font-size: 20px;font-family: 'Courier New', Courier, monospace;">
+            <label > Add yours here:</label> </p><textarea  title="messagee" id="textarea" style="border-radius: 5%;" name="message" rows="10" cols="30" placeholder="write your message here"></textarea>
 		  	<br><br>
-		  	<input type="submit">
-		  	<button ><a href="blogs.html">Cancel</a></button>
+		  	<button class="btng"  type="submit" >Submit</button>
+		  	<button class="btng"><a href="blogs.html">Cancel</a></button>
 		</form>
+        <script src="myscript.js"></script>
 
 	<hr>
 	<footer >

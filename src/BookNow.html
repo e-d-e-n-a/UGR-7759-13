@@ -1,47 +1,70 @@
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
 	<title>book a ticket </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
-    </div>
-   <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>	
+    <script src="myscript.js"></script>
+	<header>
+        <script src="script.js" defer></script>
+        <nav class="navbar">
+            <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <ul>
+                        <li><a class="class1" href="Homepage.htm">Home</a></li>
+                        <li><a class="class1" href="movies.html">Movies</a></li>       
+                        <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                        <li><a class="class2" href="login.html">Login</a></li>   
+                        <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                        <li><a class="class2" href="contact.html">Contact us</a></li>  
+                        </ul>
+                </ul>
+            </div>
+            </nav>
+        <h1 class="wel" align="center"><q>Buy a ticket,<br>take the ride</q><br>Hunter S.Thompson</h1>
+
+</div>      
+    </header>
     <h1>Book tickets </h1>
 	<br>
 	<br>
-	<form>
-		Name:<input type="text" name="name" placeholder="Eden Asamere">
-		Email:<input type="text" name="email" placeholder="abcd@gmail.com"><br><br><br>
-		Phone Number:<input type="text" name="Phonenumber" placeholder="+251990009098"><br><br><br>
-		Title:
-		<select name="Movies">
+    <div class="containerb">
+	<form name="myform" onsubmit="return valbook()" method="post" action="paymentmode.html">
+		<p>Name:</p><input title="namee" type="text" id="name" name="name" placeholder="Eden Asamere">
+		<p>Email:</p><input title="email" type="text" id="email" name="email" placeholder="abcd@gmail.com">
+		<p>Phone Number:</p><input title="phone" type="text" id="phoneno" name="Phonenumber" placeholder="+251990009098">
+		<p>Title:</p>
+        <p><select name="Movies" id="title">
 		    <option value="Anchin Lene">Anchin Lene</option>
 		    <option value="Asmelash">Asmelash</option>
 		    <option value="Kim">Kim</option>
 		    <option value="Tilaye">Tilaye</option>
-  		</select><br><br><br>
-		Date:<input type="Date" name="Date">
-  		Time:
-  		<select name="Movies">
+  		</select></p>
+        
+        <p>Date:</p><input title="date" type="Date" name="Date" id="date">
+  		<p>Time:</p>
+  		<select name="Movies" >
 		    <option value="Monday">4:00PM-6:00PM</option>
 		    <option value="Tuesday">2:00PM-8:00PM</option>
 		    <option value="sunday">4:00PM-6:00PM </option>
 		    <option value="Saturday">2:00PM-8:00PM</option>
-  		</select><br><br><br>
-  		Number of tickets:<input type="number" min="1" max="10"><br><br><br>
-  		<button><a href="BookNow.html">Reset</a></button>
-  		<button><a href="paymentmode.html">Submit</a></button><br><br><br>
+  		</select></p>
+  		<p>Number of tickets:</p><input title="numberr" type="number" min="1" max="10" id="no" name="no"><br>
+  		<button class="btng"><a href="BookNow.html">Reset</a></button>
+  		<button type="submit" class="btng">Submit</button>
 
 	</form>
+</div>
 	<hr>
 	<footer >
         <table width="100%">
@@ -73,7 +96,5 @@
             </tr>
         </table>
 </footer>
-
-
 </body>
 </html>

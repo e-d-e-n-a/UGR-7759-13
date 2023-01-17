@@ -1,33 +1,51 @@
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
 	<title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
-    </div>
-    <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>
-<h1>Sign Up</h1>
+	<header>
+        <script src="script.js" defer></script>
+        <nav class="navbar">
+            <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <ul>
+                        <li><a class="class1" href="Homepage.htm">Home</a></li>
+                        <li><a class="class1" href="movies.html">Movies</a></li>       
+                        <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                        <li><a class="class2" href="login.html">Login</a></li>   
+                        <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                        <li><a class="class2" href="contact.html">Contact us</a></li>  
+                        </ul>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="wel" align="center">Register for a new account!!!<br><br>We are be happy to have you as a member</h1>
+    </header>
+<h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:30px;font-style: italic;color: rgb(13, 11, 26);margin-top: 5%;margin-left: 5%;"><strong> Sign Up</strong></h1>
 <br>
-<form>
-	First Name:<input type="text" name="fname" placeholder="Eden"><br><br><br>
-	Last Name:<input type="text" name="lname" placeholder="Asamere"><br><br><br>
-	Email:<input type="text" name="email" placeholder="abcd@gmail.com"><br><br><br>
-	Mobile Number:<input type="text" name="number" placeholder="+251900998876"><br><br><br>
-	Password:<input type="password" name="password"><br><br><br>
-	Confirm Password:<input type="password" name="cpassword"><br><br><br>
-	<button><a href="signup.html">SignUp</a></button>
-
-
+<div class="containers">
+<script src="myscript.js"></script>
+<form onsubmit="return valsign()" action="login.html"> 
+	<p>First Name:</p><input  title="fname"type="text" name="fname" placeholder="Eden" id="fname"><br><br><br>
+	<p>Last Name:</p><input title="lname" type="text" name="lname" placeholder="Asamere" id="lname"><br><br><br>
+	<p>Email:</p><input title="email" type="text" name="email" placeholder="abcd@gmail.com" id="email"><br><br><br>
+	<p>Mobile Number:</p><input title="number" type="text" name="number" placeholder="+251900998876" id="no"><br><br><br>
+	<p>Password:</p><input  title="pass" type="password" name="password" id="pass"><br><br><br>
+    <p>Confirm Password:</p><input  title="cpass" type="password" name="cpassword" id="cpass"><br><br><br>
+	<button  title="sun" type="submit" class="btng">SignUp</button>
 </form>
+</div>
 <br>
 <br>
 	<hr>

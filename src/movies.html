@@ -1,27 +1,44 @@
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
     <title>movies</title>
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
-    <div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
-    </div>
-
-    <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>
+    <header>
+    <script src="script.js" defer></script>
+    <nav class="navbar">
+        <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+                <div class="navbar-links">
+                    <ul>
+                        <ul>
+                            <li><a class="class1" href="Homepage.htm">Home</a></li>
+                            <li><a class="class1" href="movies.html">Movies</a></li>       
+                            <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                            <li><a class="class2" href="login.html">Login</a></li>   
+                            <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                            <li><a class="class2" href="contact.html">Contact us</a></li>  
+                            </ul>
+                    </ul>
+                </div>
+            </nav>
+        <h1 class="wel" align="center"><q style="margin-bottom:10%;">When you come to a movie theatre,there are no windows,<br>you don't need to hear 
+            the sound outside and you are ready for the fantacy!</q><br><i>Bertrand Benello</i></h1>
+    </header>
     <br>
     <br>
     <br>
 <form >
-  <label for="Movies">Search by title:</label>
-  <select name="Movies">
+  <label style="font-family:fantasy;font-size:  20px;font-style: italic;color: mediumslateblue;margin-right: 20px;" for="Movies">Search by title:</label>
+  <select name="Movies" style="border:2px solid;border-radius: 20px;height: 40px;width:140px;background-color: aquamarine;">
     <option value="Anchin Lene">Anchin Lene</option>
     <option value="Asmelash">Asmelash</option>
     <option value="Kim">Kim</option>
@@ -30,20 +47,19 @@
 </form>
 <br>
 <br>
-    </font>
-    <h3 align="center">Available movies</h3>
+    <h3 align="center" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: rgb(9, 8, 15);"><strong>Available movies</strong></h3>
     <br>
 
-    <table width="100%">
+    <table id="table" width="100%">
         <tr>
-            <th align="left"></th>
-            <th align="left">Description</th>
-            <th align="left">Genre</th>
-            <th align="left">Schedule</th>
-            <th align="left">Trailor</th>
+            <th align="left" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: mediumslateblue;"> movie pictures</th>
+            <th align="left" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: mediumslateblue;">Description</th>
+            <th align="left" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: mediumslateblue;">Genre</th>
+            <th align="left" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: mediumslateblue;">Schedule</th>
+            <th id="trailer" align="left" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: mediumslateblue;">Trailor</th>
             </tr>
             <tr>
-                <td><img src="IMAGES/1.jpg" width="200px" height="200x"></td>
+                <td><img src="IMAGES/1.jpg" width="200px" height="200x" alt="image that describe tje action"></td>
                 <td>
                     <ul>
                         <li>
@@ -64,23 +80,24 @@
                 <td>Monday: 2:00PM-4:00PM<br> 
                     Sunday: 4:00PM-6:00PM</td>
                 <td>
-                    <P>
-                    <a rel="transcript" for="video" title="English" href="#text">see transcript</a>
-                    </P>
                     <video  width="320" height="240" controls>
                         <source type="video/mp4" src="VIDEO/video.mp4" >
-                        <track src="caption.vtt" kind="captions" label="English" srclang="English" default>
+                        <track src="\VIDEO\caption.vtt" kind="captions" label="English" srclang="English" default>
                     </video>
-                    <transcript id="text"><br>
-                    00:00:00.000-->00:00:01.680 <br>
-                    NARRATOR:♩♩ background music playing ♩♩♩<br>
-                    00:00:01.680-->00:00:03.000<br>
-                    rasen endadamit sleredashgn ameseginalew<br>
-                    </transcript>
+                    <P>
+                        <a rel="transcript" for="video" title="English" href="#text">see transcript</a>
+                        <transcript id="text"><br>
+                            00:00:00.000-->00:00:01.680 <br>
+                            NARRATOR:♩♩ background music playing ♩♩♩<br>
+                            00:00:01.680-->00:00:03.000<br>
+                            rasen endadamit sleredashgn ameseginalew<br>
+                            </transcript>
+                        </P>
+                    
                 </td>
             </tr> 
             <tr>
-                <td><img src="IMAGES/2.jpg" width="200px" height="200px"></td>
+                <td><img src="IMAGES/2.jpg" width="200px" height="200px" alt="image descibes content"></td>
                 <td>
                     <ul>
                         <li>
@@ -101,23 +118,25 @@
                 <td>Saturday: 2:00PM-4:00PM<br> 
                     Sunday: 4:00PM-6:00PM</td>
                 <td>
-                    <P>
-                        <a rel="transcript" for="video" title="English" href="#text">see transcript</a>
-                    </P>
                     <video  width="320" height="240" controls>
                         <source type="video/mp4" src="VIDEO/video.mp4" >
-                        <track src="caption.vtt" kind="captions" label="English" srclang="English" default>
+                        <track src="\VIDEO\caption.vtt" kind="captions" label="English" srclang="English" default>
                     </video>
-                    <transcript id="text"><br>
-                        00:00:00.000-->00:00:01.680 <br>
-                        NARRATOR:♩♩ background music playing ♩♩♩<br>
-                        00:00:01.680-->00:00:03.000<br>
-                        rasen endadamit sleredashgn ameseginalew<br>
-                    </transcript>  
+                    <P>
+                        <a rel="transcript" for="video" title="English" href="#text">see transcript</a>
+                        <transcript id="text"><br>
+                            00:00:00.000-->00:00:01.680 <br>
+                            NARRATOR:♩♩ background music playing ♩♩♩<br>
+                            00:00:01.680-->00:00:03.000<br>
+                            rasen endadamit sleredashgn ameseginalew<br>
+                        </transcript> 
+                    </P>
+                     
                 </td>
             </tr>
             <tr>
-                <td><img src="IMAGES/3.jpG" width="200px" height="200x"></td>
+                <td><img src="IMAGES/3.jpG" width="200px" height="200x" alt="image thas show film"
+                    ></td>
                 <td>
                     <ul>
                         <li>
@@ -142,24 +161,25 @@
 
                 </td>
                 <td>
-                    <P>
-                        <a rel="transcript" for="video" title="English" href="#text">see transcript</a>
-                    </P>
+                    
                     <video  width="320" height="240" controls>
                         <source type="video/mp4" src="VIDEO/video.mp4" >
-                        <track src="caption.vtt" kind="captions" label="English" srclang="English" default>
+                        <track src="\VIDEO\caption.vtt" kind="captions" label="English" srclang="English" default>
                     </video>
-                    <transcript id="text"><br>
-                        00:00:00.000-->00:00:01.680 <br>
-                        NARRATOR:♩♩ background music playing ♩♩♩<br>
-                        00:00:01.680-->00:00:03.000<br>
-                        rasen endadamit sleredashgn ameseginalew<br>
-                    </transcript>  
+                    <P>
+                        <a rel="transcript" for="video" title="English" href="#text">see transcript</a>
+                        <transcript id="text"><br>
+                            00:00:00.000-->00:00:01.680 <br>
+                            NARRATOR:♩♩ background music playing ♩♩♩<br>
+                            00:00:01.680-->00:00:03.000<br>
+                            rasen endadamit sleredashgn ameseginalew<br>
+                        </transcript></P>
+                      
                 </td>
             </tr>
     </table>
-    <button align="left"><a href="BookNow.html">Next page</a></button>
-    <button align="right"><a href="BookNow.html">Book Now</a></button>
+    <button class="btng" style="margin-right: 30px;"><a href="#">Next page</a></button>
+    <button class="btng" style="position: absolute;right:30px;margin-left: 30px;"><a href="BookNow.html">Book Now</a></button>
     
       <hr>
     <footer >

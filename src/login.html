@@ -1,48 +1,69 @@
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
 	<title>login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
+    <script src="myscript.js"></script>
+	<header>
+        <script src="script.js" defer></script>
+        <nav class="navbar">
+            <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <ul>
+                        <li><a class="class1" href="Homepage.htm">Home</a></li>
+                        <li><a class="class1" href="movies.html">Movies</a></li>       
+                        <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                        <li><a class="class2" href="login.html">Login</a></li>   
+                        <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                        <li><a class="class2" href="contact.html">Contact us</a></li>  
+                        </ul>
+                </ul>
+            </div> 
+        </nav>
+        <h1 class="wel" align="center">WELCOME TO ABCD CINEMA!!!</h1>
+    <div class="aud"><audio controls>
+        <source src="audio/welcomevoice.mp3" type="audio/mpeg" title="welcome to ABCD cinema">
+        
+    </audio>
+</div>
+    <div class="aud">
+    <a href="#" onclick="displaytrans" id="linka"> see transcript </a>
+    <transcript id="trans" ><br>
+        00:00:00.000-->00:00:00.002<br>
+        Welcome to ABCD cinema
+    </transcript>
+
+    </header>
+
+    <div>
+        <h1 class="login" >Log in </h1>
+        <fieldset class="form">
+        <form style="padding-left: 20px;" onsubmit="return validate()" action="movies.html" >
+            <br><br><br><br><label> username:</label><input  title='user' id="uname" type="text" name="username" placeholder="name" style="font-family: 'Courier New', Courier, monospace;font-size: 20px;border: 1px soid rgb(180, 138, 180);border-radius: 10px;"><br>
+            <br>
+            <br>
+            <label>Password:</label> <input  title='pass' id="password" type="Password" name="Password"  style="font-family: 'Courier New', Courier, monospace;font-size: 20px;border: 1px soid rgb(180, 138, 180);border-radius: 10px;"><br>
+            <br>
+            <br>
+            <button type="submit" style="border: 1px solid;background-color: darkmagenta;color:white;width:200px;height:40px;border-radius: 15px;margin-left: 100px;">Login</button><br>
+            <br>
+        <p>Don't have an account?<a href="signup.html"> Sign Up for new </a></p>
+        </form>
+    </fieldset>
     </div>
-    <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>
-	<h1>Log in </h1>
 	<br>
-	<form>
-		User name:<input type="text" name="username" placeholder="name"><br>
-		<br>
-		<br>
-		Password: <input type="Password" name="Password"><br>
-		<br>
-		<br>
-	
-	
-		<button >Login</button><br>
-		<br>
-		<br>
-	<br>
-	<br>
-	<br>
-	<a href="signup.html">Don't have an account? Sign Up for new </a>
-	</form>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<hr>
-	
 	<footer >
         <table width="100%">
             <tr>

@@ -1,45 +1,67 @@
 <!DOCTYPE html>
+<html lang="en"> 
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
     <title>bookaticket.com</title>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-    <div>
-        <img src="IMAGES/logo.jpg" width="100px" height="100px" alt="logo">
-    </div>
-    <font >
-        <a href="Homepage.htm">Home</a>
-        <a href="movies.html"><em>Movies</em></a>        
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
-        <a href="Aboutus.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </font>
-
-
-    <h1 align="center">WELCOME TO ABCD CINEMA!!!</h1>
-    <audio controls>
+    <header>
+        <script src="script.js" defer></script>
+        <nav class="navbar">
+            <img class="logo" src="IMAGES/logo.jpg" width="50px" height="40px" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <ul>
+                        <li><a class="class1" href="Homepage.htm">Home</a></li>
+                        <li><a class="class1" href="movies.html">Movies</a></li>       
+                        <li><a class="class2" href="blogs.html">Blogs</a></li>   
+                        <li><a class="class2" href="login.html">Login</a></li>   
+                        <li><a class="class2" href="Aboutus.html">About us</a></li>   
+                        <li><a class="class2" href="contact.html">Contact us</a></li>  
+                        </ul>
+                </ul>
+            </div>
+        </nav>
+    <h1 class="wel" align="center">WELCOME TO ABCD CINEMA!!!<br>&#128075;&#128075;&#128075;</h1>
+    <div class="aud"><audio controls>
         <source src="audio/welcomevoice.mp3" type="audio/mpeg" title="welcome to ABCD cinema">
     </audio>
-    <transcript id="text"><br>
+</div>
+    <div class="aud">
+    <a style="display: none;"> see transcript </a>
+    <transcript id="trans" ><br>
         00:00:00.000-->00:00:00.002<br>
         Welcome to ABCD cinema
     </transcript>
-    <h2 align="center">Movies on cinema</h2>
-            <img src="IMAGES/1.jpg" alt="anchin lene">
-            <img src="IMAGES/2.jpg" alt="asmelash">
-            <img src="IMAGES/3.jpg" alt="shemendefer">
-            <img src="IMAGES/4.jpg" alt="beza">
-            <img src="IMAGES/5.jpg" alt="kiya">
-            <img src="IMAGES/6.jpg" alt="sost meazen">
-            <img src="IMAGES/8.jpg" alt="Kuragnaye">
-            <img src="IMAGES/9.jpg" alt="teza">
-            <img src="IMAGES/10.jpg" alt="ske lmut">            
-    <button><a href="movies.html">Get started</a></button>
-
+</div>   
+</header>
+<h2 align="center" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:25px;font-style: italic;color: rgb(9, 8, 15); margin-top: 30px;"><strong>Movies on cinema</strong></h2>
+    <div class="container">
+        <div class="wrapper">
+            <img src="IMAGES/1.jpg" alt="anchin lene" width="300px" height="300px">
+            <img src="IMAGES/2.jpg" alt="asmelash"  width="300px" height="300px">
+            <img src="IMAGES/3.jpg" alt="shemendefer"  width="300px" height="300px">
+            <img  src="IMAGES/4.jpg" alt="beza"  width="300px" height="300px">
+            <img src="IMAGES/5.jpg" alt="kiya"  width="300px" height="300px">
+            <img src="IMAGES/6.jpg " alt="sost meazen"  width="300px" height="300px">
+            <img src="IMAGES/8.jpg" alt="Kuragnaye"  width="300px" height="300px">
+            <img src="IMAGES/9.jpg" alt="teza"  width="300px" height="300px">
+            <img src="IMAGES/10.jpg" alt="ske lmut"  width="300px" height="300px">  
+        </div>
+</div>      
+    <button class="btng"><a href="movies.html">Get started</a></button>
     <hr>
     <footer >
-        <table width="100%">
+        <table min-width="100%">
             <tr>
                 <th align="left">Upcoming Movies</th>
                 <th align="left">Contact</th>
