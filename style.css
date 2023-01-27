@@ -1,0 +1,48 @@
+.containersl{
+  
+  min-width: 100%;
+  position: relative;
+  margin-top: 50px;
+  margin-left:30px;
+  padding: 10px;  
+  overflow: hidden;
+
+}
+       .wrapper{
+          min-width:96%;
+          display: flex;
+          animation: slide 10s infinite;
+          overflow: hidden;
+        }
+        .wrapper img{
+          padding:10px;
+        }
+        
+        @keyframes slide {
+         
+          0%{
+            transform: translate(-20%);
+
+          }
+          20%{
+            transform: translate(-10%);
+          }
+          30%{
+            transform: translate(5%);
+          }          
+
+        }
+        @media screen and (max-width:675px){
+          .wrapper{
+            display: inline;
+            min-width: 70%;
+            max-width: 100%;
+            
+          }
+          .wrapper img{
+            padding:10px;
+            margin-left: 0;
+            min-width: 70%;
+          }
+          
+        }
